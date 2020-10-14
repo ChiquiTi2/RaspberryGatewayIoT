@@ -180,7 +180,7 @@ Afterwards, we will create a simpe script for testing:
 ```
 nano dht_simpletest.py
 ```
-Insert the content from the `<dht_simpletest.py>` script in the repository. Save it with `<CTRL>`+`<X>`. Then you will be able to run the script:
+Insert the content from the `<dht_simpletest.py>` script in the [Code repository](/Code/dht_simpletest.py). Save it with `<CTRL>`+`<X>`. Then you will be able to run the script:
 ```
 python3 dht_simpletest.py
 ```
