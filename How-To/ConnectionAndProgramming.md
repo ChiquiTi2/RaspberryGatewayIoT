@@ -103,8 +103,8 @@ For the new panel, you will be asked to enter the correct information for your d
 
 You can give your panel a name, e.g. "Humidity", on the right side, then click the "Apply" Button and your are ready to got. Add another panel (from a button in the upper right of your dashboard) and make also some settings about the time horizon you want to monitor, as well as the automatic update rate of your Panels:
 
-[Dashboard Settings](/Images/AddPanel.PNG)
+![Dashboard Settings](/Images/AddPanel.PNG)
 
 Afterwards, you have successfully set-up your IoT Gateway and server, Congratulations!
 
-[Final Dashboard View](/Images/Dashboard.PNG)
+![Final Dashboard View](/Images/Dashboard.PNG)
