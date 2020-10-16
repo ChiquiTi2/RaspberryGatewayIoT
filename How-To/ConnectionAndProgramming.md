@@ -50,13 +50,19 @@ In the pop-up window, copy in the JSON-file [here](/Code/) in the GitHub-reposit
 Do the same for both the Client- and Server-side Flows. Before you can deploy the code, you need to do some additional parameterization. For the sensor, open the sensor Block (called "rpi-dht22") and select the correct GPIO pin that your are actually using. 
 ![DHT Sensor Node](/Images/dhtsensor.PNG)
 
-Then, you need to adapt the MQTT broker settings. This needs to be done for each measurement and both on client and server side. Click again on the corresponding nodes.
+Then, you need to adapt the MQTT broker settings. This needs to be done for each measurement and both on client and server side. Click again on the corresponding nodes:
+
 ![MQTT Settings](/Images/Mqtt1.PNG) 
+
 Besides the topics you want to use, you also need to change the address and port of the server, if you don't run both sides on the same device or if you bounded it to a non-default port:
+
 ![MQTT Server Settings](/Images/MqttServerSettings.PNG)
 
 Afterwards, you also need to adapt the settings of the InfluxDB Nodes in the Server Flow. It is similar to the MQTT-part, so select the measurement data point you want to write onto in the database:
+
 ![InfluxDB Settings](/Images/InfluxDbSettings.PNG)
+
 Also adapt your server settings as well:
+
 ![InfluxDB Server Settings](/Images/InfluxDbServer.PNG)
 
