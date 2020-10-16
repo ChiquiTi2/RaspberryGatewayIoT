@@ -44,7 +44,7 @@ Afterwards, the easiest way is to import the complete function code, called a "F
 
 ![Node-RED Import Function](/Images/NodeRed.PNG)
 
-In the pop-up window, copy in the JSON-file [here](/Code/) in the GitHub-repository.
+In the pop-up window, copy in the JSON-file [here](/Code/Node-RED Flows/) in the GitHub-repository.
 ![Copy in the code from the clipboard](/Images/NodeRedImport.PNG)
 
 Do the same for both the Client- and Server-side Flows. Before you can deploy the code, you need to do some additional parameterization. For the sensor, open the sensor Block (called "rpi-dht22") and select the correct GPIO pin that your are actually using. 
