@@ -35,7 +35,7 @@ Please note that you need to `use`the database before, as show above. Now you ca
 select * from temperature
 ```
 
-### Load & Run your program in Node-RED
+## Load & Run your program in Node-RED
 To open Node-RED, type again your Rasperry's IP-address and the correct port for Node-RED into your browser:
 ```
 http://192.168.21.96:1880
@@ -66,3 +66,45 @@ Also adapt your server settings as well:
 
 ![InfluxDB Server Settings](/Images/InfluxDbServer.PNG)
 
+## Build your Grafana Dashboard
+### Connect your database first
+As the other tools, Grafana can be accessed from the Web-Browser, as well:
+```
+http://192.168.21.96:3000
+```
+Before you can create a dashboard, first we need to connect the InfluxDB as a data source. Therefore, move to "Settings" and "Data Source":
+
+![Data Source](/Images/GrafanaDataSourvce.PNG)
+
+Afterwards, add a new data source and select "InfluxDB" as a type:
+
+![Add data source](/Images/DataSourceInflux.PNG)
+
+Provide the correct settings to establish a connection:
+
+![Database server settings](/Images/IoTServerSettings.PNG)
+
+Don't forget to scroll down and select the actual database (in this case `air`) you want to access:
+
+![Select the database you want to use](/Images/IotServerSettings2.PNG)
+
+### Create your Dashboard
+Now you are finally ready to create your dashboard. Click onto "Create" to start:
+
+![Create Dashboard](/Images/CreateDashboard.PNG)
+
+Then, add a new panel:
+
+![Add a new Panel](/Images/AddNewPanel.PNG)
+
+For the new panel, you will be asked to enter the correct information for your data point. Therefore, select the Data Source you want to connect (our InfluxDB `air` Database) and the measurement point you want to read (so it will be either `temperature`or `humidity`):
+
+![Make your Measurement Settings](/Images/HumiditySettings.PNG)
+
+You can give your panel a name, e.g. "Humidity", on the right side, then click the "Apply" Button and your are ready to got. Add another panel (from a button in the upper right of your dashboard) and make also some settings about the time horizon you want to monitor, as well as the automatic update rate of your Panels:
+
+[Dashboard Settings](/Images/AddPanel.PNG)
+
+Afterwards, you have successfully set-up your IoT Gateway and server, Congratulations!
+
+[Final Dashboard View](/Images/Dashboard.PNG)
