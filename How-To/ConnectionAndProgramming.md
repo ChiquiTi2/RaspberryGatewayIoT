@@ -15,7 +15,7 @@ Afterwards, you can go to your "Container" tab and start the containers vial sel
 ![Start Containers from Portainer](/Images/Portainer.PNG)
 
 ## Set-up your InfluxDB database
-To set-up your database, you first need to intiate your database session and create a database. Therefore, open a terminal from inside your Docker image. Please note that you will need to exchange the name to the name of your InfluxDB container, mine is called `<blissful_wilson>`:
+To set-up your database, you first need to intiate your database session and create a database. Therefore, open a terminal from inside your Docker image. Please note that you will need to exchange the name to the name of your InfluxDB container, mine is called `blissful_wilson`:
 ```
 docker exec -it blissful_wilson/bin/bash
 influx -precision rfc3339
@@ -30,7 +30,7 @@ If it is working fine, you can now move on with your Node-RED program. After tha
 ```
 show measurements
 ```
-Please note that you need to `<use>`the database before, as show above. Now you can also show the last entries of your measurement:
+Please note that you need to `use`the database before, as show above. Now you can also show the last entries of your measurement:
 ```
 select * from temperature
 ```
