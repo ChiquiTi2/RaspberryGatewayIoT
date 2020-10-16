@@ -42,7 +42,7 @@ http://192.168.21.96:1880
 ```
 Afterwards, the easiest way is to import the complete function code, called a "Flow". Therefore, click on the menu symbol in the upper left corner and select "Import":
 
-![Node-RED Import Function](/Images/NodeRed.PNG)
+![Node-RED Import Function](/Images/NodeRed.png)
 
 In the pop-up window, copy in the JSON-file [here](/Code/Node-RED Flows/) in the GitHub-repository.
 ![Copy in the code from the clipboard](/Images/NodeRedImport.PNG)
