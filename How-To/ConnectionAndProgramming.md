@@ -74,7 +74,7 @@ http://192.168.21.96:3000
 ```
 Before you can create a dashboard, first we need to connect the InfluxDB as a data source. Therefore, move to "Settings" and "Data Source":
 
-![Data Source](/Images/GrafanaDataSourvce.PNG)
+![Data Source](/Images/GrafanaDataSourvce.png)
 
 Afterwards, add a new data source and select "InfluxDB" as a type:
 
@@ -91,7 +91,7 @@ Don't forget to scroll down and select the actual database (in this case `air`) 
 ### Create your Dashboard
 Now you are finally ready to create your dashboard. Click onto "Create" to start:
 
-![Create Dashboard](/Images/CreateDashboard.PNG)
+![Create Dashboard](/Images/CreateDashboard.png)
 
 Then, add a new panel:
 
