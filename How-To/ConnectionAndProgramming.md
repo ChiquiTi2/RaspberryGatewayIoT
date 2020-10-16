@@ -41,21 +41,21 @@ To open Node-RED, type again your Rasperry's IP-address and the correct port for
 http://192.168.21.96:1880
 ```
 Afterwards, the easiest way is to import the complete function code, called a "Flow". Therefore, click on the menu symbol in the upper left corner and select "Import".
-[Node-RED Import Function](/Images/NodeRed.PNG)
+![Node-RED Import Function](/Images/NodeRed.PNG)
 
 In the pop-up window, copy in the JSON-file [here](/Code/)( in the GitHub-repository.
-[Copy in the code from the clipboard](/Images/NodeRedImport.PNG)
+![Copy in the code from the clipboard](/Images/NodeRedImport.PNG)
 
 Do the same for both the Client- and Server-side Flows. Before you can deploy the code, you need to do some additional parameterization. For the sensor, open the sensor Block (called "rpi-dht22") and select the correct GPIO pin that your are actually using. 
-[DHT Sensor Node](/Images/dhtsensor.PNG)
+![DHT Sensor Node](/Images/dhtsensor.PNG)
 
 Then, you need to adapt the MQTT broker settings. This needs to be done for each measurement and both on client and server side. Click again on the corresponding nodes.
-[MQTT Settings](/Images/Mqtt1.PNG) 
+![MQTT Settings](/Images/Mqtt1.PNG) 
 Besides the topics you want to use, you also need to change the address and port of the server, if you don't run both sides on the same device or if you bounded it to a non-default port:
-[MQTT Server Settings](/Images/MqttServerSettings.PNG)
+![MQTT Server Settings](/Images/MqttServerSettings.PNG)
 
 Afterwards, you also need to adapt the settings of the InfluxDB Nodes in the Server Flow. It is similar to the MQTT-part, so select the measurement data point you want to write onto in the database:
-[InfluxDB Settings](/Images/InfluxDbSettings.PNG)
+![InfluxDB Settings](/Images/InfluxDbSettings.PNG)
 Also adapt your server settings as well:
-[InfluxDB Server Settings](/Images/InfluxDbServer.PNG)
+![InfluxDB Server Settings](/Images/InfluxDbServer.PNG)
 
